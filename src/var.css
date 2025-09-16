@@ -1,0 +1,22 @@
+:root {
+  --primary-color: rgb(106, 154, 176);
+  --secondary-color: rgb(58, 109, 140);
+  --dark-color: #0a0f1c;
+  --light-color: #dbeafe;
+  --background-color: #0f172a;
+  --section-bg: #1e293b;
+
+  /* Neutrals (for text/backgrounds ) */
+  --white: #ffffff;
+  --black: #000000;
+  --gray-light: #f5f5f5;
+  --gray-dark: #333333;
+
+  --font-stack: 'Roboto', sans-serif;
+  --font-size: 16px;
+  --line-height: 1.5;
+
+  /* Shadows & Borders */
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+}

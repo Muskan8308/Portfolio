@@ -1,0 +1,106 @@
+.contactSection {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container to hold both boxes */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1100px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+/* Common style */
+.messageBox,
+.form {
+    flex: 1;
+    min-width: 380px;
+    height: 400px;
+    /* same height */
+    border-radius: 15px;
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Thank you box */
+.messageBox {
+    background: #2b2b2b;
+    color: #fff;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form box (overlap + lower from top) */
+.form {
+    background: #fff;
+    z-index: 2;
+    margin-top: 50px;
+    /* niche shift */
+    margin-left: -80px;
+    /* overlap */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Inputs */
+.form input,
+.form textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 6px rgba(108, 99, 255, 0.4);
+}
+
+/* Button */
+.form button {
+    padding: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    background: #6c63ff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form button:hover {
+    background: #574bdb;
+}
+
+/* Social Links */
+.socialLinks {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.socialIcon img {
+    width: 45px;
+    height: 45px;
+    transition: transform 0.3s ease;
+}
+
+.socialIcon img:hover {
+    transform: scale(1.15);
+}

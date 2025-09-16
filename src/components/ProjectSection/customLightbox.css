@@ -1,0 +1,30 @@
+/* Smooth background */
+.yarl__container {
+    background-color: rgba(34, 32, 32, 0.8) !important;
+    transition: background-color 0.3s ease;
+}
+
+/* centered image  */
+.yarl__slide_image {
+    border-radius: 10px !important;
+    max-width: 80% !important;
+    max-height: 80vh !important;
+    transition: transform 0.3s ease;
+}
+
+/* zoom effect */
+.yarl__slide_current .yarl__slide_image {
+    transform: scale(1.05);
+}
+
+/* disable full stretch */
+.yarl__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.projectImage {
+    cursor: pointer;
+}

@@ -1,0 +1,138 @@
+@import "../../var.css";
+
+.container {
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 49px;
+  z-index: 1;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--primary-color);
+  z-index: 1;
+}
+
+.title {
+  font-size: 62px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: var(--font-stack);
+  background: linear-gradient(90deg, var(--light-color) 0%, var(--primary-color) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.description {
+  font-size: 30px;
+  color: var(--light-color);
+  margin-bottom: 52px;
+  line-height: 1.5;
+}
+
+.contactBtn {
+  padding: 14px 26px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contactBtn:hover {
+  background-color: #4d88a391;
+  transform: translateY(-2px);
+}
+
+.heroImg {
+  width: 35%;
+  border-radius: 50%;
+  padding: 8px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--light-color));
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.6),
+    0 0 40px rgba(59, 130, 246, 0.4);
+  animation: floating 3s ease-in-out infinite,
+    glow 2s ease-in-out infinite alternate;
+}
+
+/* Glow animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px rgba(82, 146, 219, 0.6),
+      0 0 30px rgba(82, 146, 219, 0.4);
+  }
+
+  to {
+    box-shadow: 0 0 25px rgba(82, 146, 219, 0.9),
+      0 0 45px rgba(82, 146, 219, 0.7),
+      0 0 65px rgba(82, 146, 219, 0.5);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* .topBlur {
+  position: absolute;
+  top: -128px;
+  left: -10vw;
+  width: 50vw;
+  height: 45vw;
+  min-width: 350px;
+  border-radius: 764px;
+  background: rgba(112, 128, 182, 0.473);
+  filter: blur(100px);
+  z-index: -2;
+} */
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroImg {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 24px;
+  }
+
+  .contactBtn {
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+}
