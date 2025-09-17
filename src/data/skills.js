@@ -16,47 +16,57 @@ const skills = {
     frontend: [
         {
             name: "HTML",
-            imageSrc: html
+            imageSrc: html,
+            level: 90
         },
         {
             name: "CSS",
-            imageSrc: css
+            imageSrc: css,
+            level: 80
         },
         {
             name: "JavaScript",
-            imageSrc: js
+            imageSrc: js,
+            level: 70
         },
         {
             name: "React",
-            imageSrc: react
+            imageSrc: react,
+            level: 60
         },
         {
             name: "Bootstrap",
-            imageSrc: bootstrap
+            imageSrc: bootstrap,
+            level: 70
         }
     ],
     backend : [
         {
             name : "Java",
-            imageSrc : java
+            imageSrc : java,
+            level: 75
         },
         {
             name : "Spring Boot",
-            imageSrc : springBoot
+            imageSrc : springBoot,
+            level: 60
         },
         {
             name : "MySQL",
-            imageSrc : mysql
+            imageSrc : mysql,
+            level: 60
         }
     ],
     languages : [
         {
             name : "Java",
-            imageSrc : java
+            imageSrc : java,
+            level: 75
         },
         {
             name : "JavaScript",
-            imageSrc : js
+            imageSrc : js,
+            level: 70
         },
     ],
     tools : [
