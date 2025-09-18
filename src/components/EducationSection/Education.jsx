@@ -26,16 +26,19 @@ export const Education = () => {
 
 
   return (
-    <section className={styles.container} id="education">
-
-      <h3 className={styles.title}>Education</h3>
-      <div className={styles.timeline}>
-        {
-          educationData.map((edu, idx) => (
-            <div id={idx} 
-              className={`${styles.timelineItem} ${idx % 2 == 0 ? styles.left : styles.right}`} 
-              key={idx}>
-              
+    <>
+      <div className={styles.divider} id="education"></div>
+      <section className={styles.container}>
+        <h3 className={styles.title}>Education</h3>
+        <div className={styles.timeline}>
+          {educationData.map((edu, idx) => (
+            <div
+              id={idx}
+              className={`${styles.timelineItem} ${
+                idx % 2 == 0 ? styles.left : styles.right
+              }`}
+              key={idx}
+            >
               <div className={styles.dot}></div>
               <div className={styles.content}>
                 <h3 className={styles.degree}>{edu.degree}</h3>
@@ -44,9 +47,9 @@ export const Education = () => {
                 <p className={styles.result}>{edu.result}</p>
               </div>
             </div>
-          ))
-        }
-      </div>
-    </section>
-  )
+          ))}
+        </div>
+      </section>
+    </>
+  );
 }

@@ -25,6 +25,15 @@
     position: relative;
 }
 
+.subtitle {
+    font-size: 26px;
+    font-weight: 700;
+    color: #74daf7;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .subtitle::after {
     content: "";
     display: block;
@@ -39,14 +48,7 @@
     width: 100%;
 }
 
-.subtitle {
-    font-size: 26px;
-    font-weight: 700;
-    color: #74daf7;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+
 
 .skillContainer {
     display: flex;
@@ -146,6 +148,11 @@
     .subtitle {
         font-size: 22px;
         text-align: center;
+    }
+
+    .subtitle::after {
+        
+        margin-left: 41%;
     }
 
     .eachSkills {

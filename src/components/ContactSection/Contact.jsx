@@ -28,14 +28,46 @@ export const Contact = () => {
 
   return (
     <section className={styles.contactSection} id="contact">
+      <div className={styles.divider}></div>
+      <h2 className={styles.heading}>Contact Me</h2>
       <div className={styles.container}>
         {/* Left box - Message */}
         <div className={styles.messageBox}>
-          <p>
-            Thanks for visiting! We hope that you have found what you needed.{" "}
-            <br />
-            If not, feel free to contact us.
-          </p>
+          <h5 className={styles.messageTitle}>Thanks for visiting!</h5>
+          <div className={styles.messageContent}>
+            <p>
+              I love building projects, solving problems, and learning new tech
+              every day. If you have an idea, collaboration, or just want to say
+              hi — drop me a message, I’d be happy to connect!
+            </p>
+            {/* Social Media Links */}
+            <div className={styles.socialLinks}>
+              <a
+                href="https://www.linkedin.com/in/muskan-chourasia19/"
+                rel="noopener noreferrer"
+                target="_blank"
+                className={styles.socialIcon}
+              >
+                <img src={linkedinIcon} alt="LinkedIn" />
+              </a>
+              <a
+                href="https://github.com/Muskan8308"
+                className={styles.socialIcon}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img src={githubIcon} alt="GitHub" />
+              </a>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://leetcode.com/u/Muskan83038/"
+                className={styles.socialIcon}
+              >
+                <img src={leetcodeIcon} alt="LeetCode" />
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Right box - Form */}
@@ -67,34 +99,6 @@ export const Contact = () => {
 
           <button type="submit">Send Message</button>
         </form>
-
-        {/* Social Media Links */}
-        <div className={styles.socialLinks}>
-          <a
-            href="https://www.linkedin.com/in/muskan-chourasia19/"
-            rel="noopener noreferrer"
-            target="_blank"
-            className={styles.socialIcon}
-          >
-            <img src={linkedinIcon} alt="LinkedIn" />
-          </a>
-          <a
-            href="https://github.com/Muskan8308"
-            className={styles.socialIcon}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img src={githubIcon} alt="GitHub" />
-          </a>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://leetcode.com/u/Muskan83038/"
-            className={styles.socialIcon}
-          >
-            <img src={leetcodeIcon} alt="LeetCode" />
-          </a>
-        </div>
       </div>
     </section>
   );
