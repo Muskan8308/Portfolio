@@ -12,8 +12,11 @@ export const Hero = () => {
             I'm a Frontend, Backend and a Java developer. Reach out to me if you
             like to collaborate with me :
           </p>
-          <a className={styles.contactBtn} href="mailto:muskan93093@gmail.com">
-            Contact me
+          <a
+            className={styles.contactBtn}
+            href="https://drive.google.com/file/d/1HW9j6rIj9HBfewvqVhhkOjy4SsIRezdq/view?usp=sharing"
+          >
+            Get Resume
           </a>
         </div>
         <img src={heroImage} alt="Hero Image" className={styles.heroImg} />

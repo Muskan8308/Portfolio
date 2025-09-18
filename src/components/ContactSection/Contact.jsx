@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styles from './Contact.module.css'
 import {useForm} from 'react-hook-form'
 import { toast } from 'react-hot-toast';
@@ -9,21 +9,28 @@ import leetcodeIcon from '../../assets/profile/leetcodeLogo.png';
 
 export const Contact = () => {
 
-    const { register, handleSubmit, formState: {errors}} = useForm();
-
+    const { register, handleSubmit, formState: {errors}, reset } = useForm();
+    const form = useRef(null);
     const onSubmitClick = (data) => {
-        emailjs.sendForm(
-            '','',form.current, ''
-        )
-        .then((result) => {
-            console.log(result.text);
-            toast.success("Message sent successfully!");
-        },
-        (error) => {
-            console.log(error.text);
-            toast.error("Message failed to send.");
-        })
-        reset();
+        emailjs
+          .sendForm(
+            "service_5dixslg",   // service ID
+            "template_wbgh8s1",  // template ID
+            form.current,
+            "o9VLokFSPsRuPA4ho"  // user or public ID
+          )
+          .then(
+            (result) => {
+              console.log(result.text);
+              toast.success("Message sent successfully!");
+              reset();
+            },
+            (error) => {
+              console.log(error.text);
+              toast.error("Message failed to send.");
+            }
+          );
+       
     }
 
   return (
@@ -72,7 +79,7 @@ export const Contact = () => {
 
         {/* Right box - Form */}
 
-        <form onSubmit={handleSubmit(onSubmitClick)} className={styles.form}>
+        <form ref={form} onSubmit={handleSubmit(onSubmitClick)} className={styles.form}>
           <input
             {...register("name", { required: true })}
             placeholder="Full Name"
