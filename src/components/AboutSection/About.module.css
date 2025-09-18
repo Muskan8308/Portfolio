@@ -114,16 +114,24 @@
 }
 
 .body {
-    font-size: 16px;
+    font-size: 17px;
     color: #cfeaf7;
     margin-bottom: 14px;
     line-height: 1.7;
 }
 
+strong {
+    color: #cfeaf7;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
 /* ACCENT / HIGHLIGHT */
 .accent {
     color: var(--primary-color);
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
 /* CALL TO ACTIONS */

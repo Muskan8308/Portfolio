@@ -24,24 +24,25 @@ export const About = () => {
           <h2 className={styles.title}>About Me</h2>
           <p className={styles.lead}>
             Hi, I’m <span className={styles.accent}>Muskan Chourasia</span> — a
-            pre-final year Computer Science student who builds production-ready
-            web applications.
+            final-year Computer Science student passionate about building
+            production-ready web applications.
           </p>
 
           <p className={styles.body}>
-            I enjoy turning ideas into fast, accessible, and beautiful user
+            I enjoy transforming ideas into fast, accessible, and beautiful user
             experiences using <span className={styles.accent}>React</span> on
             the frontend and <span className={styles.accent}>Spring Boot</span>{" "}
-            on the backend. I’ve solved <strong>300+</strong> DSA problems on
-            LeetCode and regularly participate in coding contests to sharpen my
-            problem solving.
+            on the backend (currently learning). I’ve solved{" "}
+            <strong>345+</strong> DSA problems on LeetCode and earned the{" "}
+            <strong>365-Day Consistency Badge</strong>, which reflects my
+            dedication to continuous problem-solving and learning.
           </p>
 
           <p className={styles.body}>
-            Currently focused on becoming a well-rounded{" "}
+            Currently, I’m focused on becoming a well-rounded{" "}
             <span className={styles.accent}>Full-Stack Java Developer</span> and
-            preparing for placements. I write clean, tested code and enjoy
-            collaborating on real-world projects.
+            preparing for placements. I believe in writing clean, maintainable
+            code and collaborating effectively on real-world projects.
           </p>
 
           <div className={styles.ctaRow}>
