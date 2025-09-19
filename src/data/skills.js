@@ -4,7 +4,7 @@ import js from "../assets/skills/jsLogo.png";
 import react from "../assets/skills/reactLogo.png";
 import bootstrap from "../assets/skills/bootstrapLogo.png";
 import java from "../assets/skills/javaLogo.png";
-import springBoot from "../assets/skills/springBootLogo.png";
+import springBoot from "../assets/skills/springbootLogo.png";
 import mysql from "../assets/skills/mysqlLogo.png";
 import github from "../assets/skills/githubLogo.png";
 import vscode from "../assets/skills/vscodeLogo.png";
