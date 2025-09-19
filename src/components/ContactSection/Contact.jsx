@@ -11,13 +11,17 @@ export const Contact = () => {
 
     const { register, handleSubmit, formState: {errors}, reset } = useForm();
     const form = useRef(null);
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
     const onSubmitClick = (data) => {
         emailjs
           .sendForm(
-            "service_5dixslg",   // service ID
-            "template_wbgh8s1",  // template ID
+            serviceId,   // service ID
+            templateId,  // template ID
             form.current,
-            "o9VLokFSPsRuPA4ho"  // user or public ID
+            publicKey  // user or public ID
           )
           .then(
             (result) => {
