@@ -8,7 +8,7 @@ const Footer = () => {
 
       <div className={styles.footer}>
         <p className={styles.footerText}>
-          © 2025 Muskan Chourasia. All rights reserved.
+          © {new Date().getFullYear()} Muskan Chourasia. All rights reserved.
         </p>
       </div>
     </>
