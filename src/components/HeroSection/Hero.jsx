@@ -14,7 +14,7 @@ export const Hero = () => {
           </p>
           <a
             className={styles.contactBtn}
-            href="https://drive.google.com/file/d/1HW9j6rIj9HBfewvqVhhkOjy4SsIRezdq/view?usp=sharing"
+            href="https://drive.google.com/file/d/1sRDDcGdTUK7bbbGQin-HW4Lk9getjVg6/view?usp=sharing"
           >
             Get Resume
           </a>
